@@ -1,8 +1,8 @@
-import { FaExternalLinkAlt, FaCode, FaLock, FaBuilding, FaGitAlt } from "react-icons/fa";
+import { IconExternalLink, IconCode, IconLock, IconBuilding, IconBrandGit } from "@tabler/icons-react";
 
 const projects = [
   {
-    icon: <FaCode className="text-blue-600 text-2xl" />,
+    icon: <IconCode className="text-blue-600 text-2xl" />,
     title: "Dave Procode",
     category: "Site web vitrine de l'agence digitale",
     desc: "Développement complet du site web de l'agence digitale en développement logiciel. Mise en place d'une pipeline CI/CD avec Jenkins, tests logiciels, assurance qualité et contrôle qualité dans une approche DevOps complète.",
@@ -12,7 +12,7 @@ const projects = [
     color: "blue",
   },
   {
-    icon: <FaBuilding className="text-green-600 text-2xl" />,
+    icon: <IconBuilding className="text-green-600 text-2xl" />,
     title: "Eden Ingénieurs Conseil",
     category: "Site vitrine professionnel",
     desc: "Conception et développement du site web professionnel pour ce cabinet d'ingénierie. Interface moderne, responsive et optimisée pour les performances. Rendu côté serveur avec Next.js.",
@@ -21,7 +21,7 @@ const projects = [
     color: "green",
   },
   {
-    icon: <FaGitAlt className="text-orange-500 text-2xl" />,
+    icon: <IconBrandGit className="text-orange-500 text-2xl" />,
     title: "Pipeline CI/CD — Mémoire Licence",
     category: "DevOps & Qualité logicielle",
     desc: "Recherche et implémentation d'un système d'intégration, validation et déploiement continu avec DevOps et Jenkins. Axé sur les tests logiciels, l'assurance qualité (QA) et le contrôle qualité en production.",
@@ -29,7 +29,7 @@ const projects = [
     color: "orange",
   },
   {
-    icon: <FaLock className="text-purple-600 text-2xl" />,
+    icon: <IconLock className="text-purple-600 text-2xl" />,
     title: "Cybersécurité & Paix Numérique",
     category: "Formation régionale",
     desc: "Programme de formation régionale en cybersécurité et consolidation numérique de la paix en Afrique, conduit avec le PNUD, Give1Project et l'Open Society Foundation. Certification internationale Check Point obtenue.",
@@ -90,7 +90,7 @@ export default function Projects() {
             {p.url && (
               <a href={p.url} target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline font-medium mt-auto">
-                <FaExternalLinkAlt className="text-xs" />
+                <IconExternalLink className="text-xs" />
                 Voir le site
               </a>
             )}

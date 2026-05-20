@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 
 const links = [
   { href: "/", label: "Accueil" },
@@ -40,7 +40,7 @@ export default function Navbar() {
         </ul>
         {/* Mobile */}
         <button className="md:hidden p-2" onClick={() => setOpen(!open)}>
-          {open ? <HiX className="text-2xl" /> : <HiMenu className="text-2xl" />}
+          {open ? <IconX className="text-2xl" /> : <IconMenu2 className="text-2xl" />}
         </button>
       </div>
       {open && (

@@ -1,32 +1,32 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
+import { IconMail, IconBrandGithub, IconBrandLinkedin, IconMapPin, IconBrandWhatsapp } from "@tabler/icons-react";
 
 const contacts = [
   {
-    icon: <FaEnvelope className="text-blue-600 text-xl" />,
+    icon: <IconMail className="text-blue-600 text-xl" />,
     label: "Email",
     value: "nbamandji@gmail.com",
     href: "mailto:nbamandji@gmail.com",
   },
   {
-    icon: <FaWhatsapp className="text-green-500 text-xl" />,
+    icon: <IconBrandWhatsapp className="text-green-500 text-xl" />,
     label: "WhatsApp",
     value: "+221 77 760 52 33",
     href: "https://wa.me/221777605233",
   },
   {
-    icon: <FaGithub className="text-gray-800 text-xl" />,
+    icon: <IconBrandGithub className="text-gray-800 text-xl" />,
     label: "GitHub",
     value: "https://github.com/BamsAuthentic",
     href: "https://github.com",
   },
   {
-    icon: <FaLinkedin className="text-blue-700 text-xl" />,
+    icon: <IconBrandLinkedin className="text-blue-700 text-xl" />,
     label: "LinkedIn",
     value: "https://www.linkedin.com/in/nathan-dariel-bamandji-255301256/",
     href: "https://linkedin.com",
   },
   {
-    icon: <FaMapMarkerAlt className="text-red-500 text-xl" />,
+    icon: <IconMapPin className="text-red-500 text-xl" />,
     label: "Localisation",
     value: "Dakar, Sénégal",
     href: null,

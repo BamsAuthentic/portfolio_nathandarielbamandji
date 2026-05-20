@@ -1,32 +1,32 @@
-import { FaMedal, FaGraduationCap, FaShieldAlt, FaChartBar, FaBullhorn } from "react-icons/fa";
+import { IconMedal, IconGraduationCap, IconShieldCheck, IconChartBar, IconBullhorn } from "@tabler/icons-react";
 
 const certs = [
   {
-    icon: <FaShieldAlt className="text-blue-500 text-xl mt-0.5" />,
+    icon: <IconShieldCheck className="text-blue-500 text-xl mt-0.5" />,
     label: "Cybersécurité régionale & consolidation numérique de la paix",
     org: "PNUD · Give1Project · Open Society Foundation",
     badge: "Check Point International",
   },
   {
-    icon: <FaGraduationCap className="text-purple-500 text-xl mt-0.5" />,
+    icon: <IconGraduationCap className="text-purple-500 text-xl mt-0.5" />,
     label: "MSc (Master of science) Woolf — Génie Logiciel",
     org: "En cours de finalisation",
     badge: "MSc",
   },
   {
-    icon: <FaChartBar className="text-green-500 text-xl mt-0.5" />,
+    icon: <IconChartBar className="text-green-500 text-xl mt-0.5" />,
     label: "Data Science",
     org: "Certification internationale",
     badge: "Data",
   },
   {
-    icon: <FaBullhorn className="text-orange-500 text-xl mt-0.5" />,
+    icon: <IconBullhorn className="text-orange-500 text-xl mt-0.5" />,
     label: "Marketing Digital · Téléservices",
     org: "Certifications professionnelles",
     badge: "Marketing",
   },
   {
-    icon: <FaMedal className="text-yellow-500 text-xl mt-0.5" />,
+    icon: <IconMedal className="text-yellow-500 text-xl mt-0.5" />,
     label: "Gestion de projet humanitaire & MEAL",
     org: "Suivi, Évaluation, Apprentissage et Redevabilité",
     badge: "MEAL",

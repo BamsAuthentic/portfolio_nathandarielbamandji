@@ -1,25 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import {
-  SiJavascript, SiReact, SiNextdotjs, SiNodedotjs,
-  SiPython, SiTailwindcss, SiDocker, SiJenkins,
-  SiMongodb, SiMysql, SiGit, SiTypescript,
-} from "react-icons/si";
+  IconBrandJavascript, IconBrandReact, IconBrandNextjs, IconBrandNodejs,
+  IconBrandPython, IconBrandTailwind, IconBrandDocker, IconBrandJenkins,
+  IconBrandMongodb, IconBrandMysql, IconBrandGit, IconBrandTypescript,
+} from "@tabler/icons-react";
 
 const skills = [
-  { icon: <SiJavascript className="text-yellow-400" />, label: "JavaScript" },
-  { icon: <SiTypescript className="text-blue-500" />, label: "TypeScript" },
-  { icon: <SiReact className="text-cyan-400" />, label: "React" },
-  { icon: <SiNextdotjs className="text-black dark:text-white" />, label: "Next.js" },
-  { icon: <SiNodedotjs className="text-green-500" />, label: "Node.js" },
-  { icon: <SiPython className="text-blue-500" />, label: "Python" },
-  { icon: <SiTailwindcss className="text-sky-400" />, label: "Tailwind CSS" },
-  { icon: <SiDocker className="text-blue-400" />, label: "Docker" },
-  { icon: <SiJenkins className="text-red-500" />, label: "Jenkins" },
-  { icon: <SiMongodb className="text-green-600" />, label: "MongoDB" },
-  { icon: <SiMysql className="text-blue-700" />, label: "MySQL" },
-  { icon: <SiGit className="text-orange-500" />, label: "Git & CI/CD" },
+  { icon: <IconBrandJavascript className="text-yellow-400" />, label: "JavaScript" },
+  { icon: <IconBrandTypescript className="text-blue-500" />, label: "TypeScript" },
+  { icon: <IconBrandReact className="text-cyan-400" />, label: "React" },
+  { icon: <IconBrandNextjs className="text-black dark:text-white" />, label: "Next.js" },
+  { icon: <IconBrandNodejs className="text-green-500" />, label: "Node.js" },
+  { icon: <IconBrandPython className="text-blue-500" />, label: "Python" },
+  { icon: <IconBrandTailwind className="text-sky-400" />, label: "Tailwind CSS" },
+  { icon: <IconBrandDocker className="text-blue-400" />, label: "Docker" },
+  { icon: <IconBrandJenkins className="text-red-500" />, label: "Jenkins" },
+  { icon: <IconBrandMongodb className="text-green-600" />, label: "MongoDB" },
+  { icon: <IconBrandMysql className="text-blue-700" />, label: "MySQL" },
+  { icon: <IconBrandGit className="text-orange-500" />, label: "Git & CI/CD" },
 ];
 
 export default function Home() {
@@ -65,15 +65,15 @@ export default function Home() {
             <div className="flex gap-2 ml-1">
               <a href="https://github.com" target="_blank" rel="noreferrer"
                 className="p-2.5 border border-gray-200 bg-white rounded-lg hover:bg-gray-50 transition shadow-sm" title="GitHub">
-                <FaGithub className="text-lg" />
+                <IconBrandGithub className="text-lg" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer"
                 className="p-2.5 border border-gray-200 bg-white rounded-lg hover:bg-gray-50 transition shadow-sm" title="LinkedIn">
-                <FaLinkedin className="text-lg text-blue-700" />
+                <IconBrandLinkedin className="text-lg text-blue-700" />
               </a>
               <a href="mailto:nbamandji@gmail.com"
                 className="p-2.5 border border-gray-200 bg-white rounded-lg hover:bg-gray-50 transition shadow-sm" title="Email">
-                <FaEnvelope className="text-lg text-gray-500" />
+                <IconMail className="text-lg text-gray-500" />
               </a>
             </div>
           </div>
