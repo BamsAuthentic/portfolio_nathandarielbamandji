@@ -34,6 +34,14 @@ html {
               color 0.3s ease;
 }
 
+.perspective-distant {
+  perspective: 1200px;
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

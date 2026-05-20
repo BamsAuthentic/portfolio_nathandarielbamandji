@@ -1,12 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { IconExternalLink, IconCode, IconLock, IconBuilding, IconBrandGit } from "@tabler/icons-react";
-
-const colorMap: Record<string, string> = {
-  blue: "bg-blue-50 dark:bg-blue-950 border-blue-100 dark:border-blue-900",
-  green: "bg-green-50 dark:bg-green-950 border-green-100 dark:border-green-900",
-  orange: "bg-orange-50 dark:bg-orange-950 border-orange-100 dark:border-orange-900",
-  purple: "bg-purple-50 dark:bg-purple-950 border-purple-100 dark:border-purple-900",
-};
+import { IconExternalLink, IconCode, IconBuilding, IconBrandGit, IconLock } from "@tabler/icons-react";
+import { CometCard } from "@/components/ui/comet-card";
 
 const tagColorMap: Record<string, string> = {
   blue: "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300",
@@ -69,41 +63,36 @@ export default async function Projects({
         <p className="text-gray-400 dark:text-gray-500 text-sm">{t("subtitle")}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-8">
         {projects.map((p) => (
-          <div key={p.title}
-            className={`bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col`}>
+          <CometCard key={p.title}>
+            <div className="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl p-6 flex flex-col h-full">
 
-            {p.thesis && (
-              <span className="text-xs bg-blue-600 text-white px-2 py-1 rounded-md mb-4 inline-block w-fit font-medium">
-                📄 {t("thesis_badge")}
-              </span>
-            )}
+              <div className="w-12 h-12 rounded-xl bg-gray-50 dark:bg-gray-700 border flex items-center justify-center mb-4">
+                {p.icon}
+              </div>
 
-            <div className={`w-12 h-12 rounded-xl ${colorMap[p.color]} border flex items-center justify-center mb-4`}>
-              {p.icon}
+              <p className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide font-medium mb-1">{p.category}</p>
+              <h2 className="text-lg font-semibold mb-3">{p.title}</h2>
+              <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 flex-1">{p.desc}</p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {p.tags.map((tag) => (
+                  <span key={tag} className={`text-xs px-2 py-1 rounded-full font-medium ${tagColorMap[p.color]}`}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {p.url && (
+                <a href={p.url} target="_blank" rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline font-medium mt-auto">
+                  <IconExternalLink className="text-xs" />
+                  {t("view_site")}
+                </a>
+              )}
             </div>
-
-            <p className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide font-medium mb-1">{p.category}</p>
-            <h2 className="text-lg font-semibold mb-3">{p.title}</h2>
-            <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 flex-1">{p.desc}</p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              {p.tags.map((tag) => (
-                <span key={tag} className={`text-xs px-2 py-1 rounded-full font-medium ${tagColorMap[p.color]}`}>
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            {p.url && (
-              <a href={p.url} target="_blank" rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline font-medium mt-auto">
-                <IconExternalLink className="text-xs" />
-                {t("view_site")}
-              </a>
-            )}
-          </div>
+          </CometCard>
         ))}
       </div>
     </div>

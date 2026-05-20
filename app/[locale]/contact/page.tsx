@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { IconMail, IconBrandGithub, IconBrandLinkedin, IconMapPin, IconBrandWhatsapp } from "@tabler/icons-react";
+import ContactForm from "@/components/ContactForm";
 
 export default async function Contact({
   params,
@@ -54,50 +55,7 @@ export default async function Contact({
 
       <div className="grid md:grid-cols-2 gap-10">
 
-        {/* FORM */}
-        <div className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 shadow-sm">
-          <h2 className="text-lg font-semibold mb-6">{t("form_title")}</h2>
-          <div className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("form_name")}</label>
-              <input
-                type="text"
-                placeholder={t("form_name_placeholder")}
-                className="w-full border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition placeholder-gray-400 dark:placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("form_email")}</label>
-              <input
-                type="email"
-                placeholder={t("form_email_placeholder")}
-                className="w-full border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition placeholder-gray-400 dark:placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("form_subject")}</label>
-              <input
-                type="text"
-                placeholder={t("form_subject_placeholder")}
-                className="w-full border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition placeholder-gray-400 dark:placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("form_message")}</label>
-              <textarea
-                rows={5}
-                placeholder={t("form_message_placeholder")}
-                className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
-              />
-            </div>
-            <button
-              type="button"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm"
-            >
-              {t("form_submit")}
-            </button>
-          </div>
-        </div>
+        <ContactForm />
 
         {/* CONTACT INFO */}
         <div className="space-y-4">

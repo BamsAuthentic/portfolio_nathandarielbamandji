@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,19 +46,19 @@ export default async function LocaleLayout({
         className={`${inter.className} min-h-screen`}
         style={{ backgroundColor: "var(--bg)", color: "var(--text)" }}
       >
-        <script
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function() {
-                try {
-                  var theme = localStorage.getItem("theme");
-                  if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-                    document.documentElement.classList.add("dark");
-                  } else if (theme === "light") {
-                    document.documentElement.classList.remove("dark");
-                  }
-                } catch(e) {}
-              })();
+              try {
+                var theme = localStorage.getItem("theme");
+                if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                  document.documentElement.classList.add("dark");
+                } else if (theme === "light") {
+                  document.documentElement.classList.remove("dark");
+                }
+              } catch(e) {}
             `,
           }}
         />
@@ -72,6 +74,32 @@ export default async function LocaleLayout({
           >
             {t("text")}
           </footer>
+          <Toaster
+            position="top-right"
+            gutter={12}
+            containerClassName=""
+            toastOptions={{
+              duration: 4000,
+              className:
+                "bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm font-medium shadow-lg border border-gray-100 dark:border-gray-700",
+              style: {
+                padding: "12px 20px",
+                borderRadius: "12px",
+              },
+              success: {
+                iconTheme: {
+                  primary: "#22c55e",
+                  secondary: "#fff",
+                },
+              },
+              error: {
+                iconTheme: {
+                  primary: "#ef4444",
+                  secondary: "#fff",
+                },
+              },
+            }}
+          />
         </NextIntlClientProvider>
       </body>
     </html>
