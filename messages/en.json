@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "brand": "Nathan.dev",
+    "brand": "Nathan.IT",
     "home": "Home",
     "about": "About",
     "projects": "Projects",
@@ -10,9 +10,9 @@
   },
   "HomePage": {
     "available": "Available",
-    "title": "Junior Full Stack Web Developer",
+    "title": " Full Stack Web Developer",
     "name": "Nathan Dariel<br/>BAMANDJI",
-    "description": "MSc (Master of science) in Software Engineering · Check Point Certified (Cybersecurity) · Data Science · CI/CD & DevOps. Passionate about web development, software quality, and digital security. Based in Dakar, Senegal.",
+    "description": "MSc (Master of science) in Software Engineering · Cybersecurity , Check Point CCSA (Check Point Certified Security Administrator) international certification, currently in progress, covering technologies such as Fortinet and Palo Alto, funded by the United Nations Development Program (UNDP, Senegal Office) · Data Science · CI/CD & DevOps. Passionate about web development, software quality, and digital security. Based in Dakar, Senegal.",
     "view_projects": "View my projects",
     "contact_me": "Contact me",
     "stats_exp": "Years of experience",
@@ -27,8 +27,8 @@
   },
   "AboutPage": {
     "title": "About me",
-    "bio_p1": "I am <strong>Nathan Dariel BAMANDJI</strong>, a Junior Full Stack Web Developer passionate about building modern, performant and secure web applications.",
-    "bio_p2": "Currently finishing my <strong>MSc (Master of Science) in Software Engineering</strong>, I combine solid technical skills (JavaScript, React, Next.js, Node.js, Python, Power BI) with expertise in DevOps, CI/CD, Data Analysis and Cybersecurity. Engaged in social and technological impact projects at regional and international levels following my Cybersecurity training led by UNDP, Give1project and Open Society Foundation.",
+    "bio_p1": "I am <strong>Nathan Dariel BAMANDJI</strong>, a  Full Stack Web Developer passionate about building modern, performant and secure web applications.",
+    "bio_p2": "Currently finishing my <strong>MSc (Master of Science) in Software Engineering</strong>, I combine solid technical skills in software eengineering (JavaScript, React, Next.js, Node.js, Python, Power BI) with expertise in DevOps, CI/CD Continuous Integration and Deployment continuous, Data, reporting and visualieation  and Cybersecurity Working to raise awareness of cyberattacks and threats and promote digital hygiene. Engaged in social and technological impact projects at regional and international levels following my Cybersecurity training led by UNDP, Give1project and Open Society Foundation.",
     "thesis_badge": "Bachelor's Thesis",
     "thesis_title": "Integration, validation and continuous deployment CI/CD with DevOps and Jenkins — Case Dave Procode",
     "thesis_desc": "Research work focused on software quality assurance (QA), quality control, software testing and implementing a complete DevOps pipeline with Jenkins in a real production context.",
@@ -78,6 +78,15 @@
     "project_4_title": "Cybersecurity & Digital Peace",
     "project_4_cat": "Regional Training",
     "project_4_desc": "Regional training program in cybersecurity and digital peacebuilding in Africa, conducted with UNDP, Give1Project and Open Society Foundation. Check Point international certification obtained.",
+    "project_5_title": "Sefin Petroleum Corporation",
+    "project_5_cat": "Corporate Website",
+    "project_5_desc": "Design and development of the corporate website for Sefin Petroleum Corporation, a company specializing in petroleum marketing. Built with WordPress for easy content management.",
+    "project_6_title": "OCLA Congo",
+    "project_6_cat": "NGO Website",
+    "project_6_desc": "Design and development of the website for OCLA Congo, a non-profit NGO promoting human rights, improving the civil status system, and eradicating statelessness in Congo-Brazzaville. Built with WordPress.",
+    "project_7_title": "Cybersecurity Bootcamp — Monitoring & SIEM",
+    "project_7_cat": "Cybersecurity & Pentest",
+    "project_7_desc": "Hands-on cybersecurity training during an intensive Bootcamp. Worked with Wireshark for network protocol analysis and suspicious traffic diagnosis, Splunk for log analysis, security dashboards, and real-time anomaly detection. Performed vulnerability scanning with Nessus/OpenVAS and remediation management. Conducted network audits and penetration testing with Nmap/Metasploit to identify attack vectors, and used Burp Suite for web application security testing.",
     "view_site": "View site"
   },
   "ContactPage": {
@@ -99,10 +108,10 @@
     "info_github": "GitHub",
     "info_linkedin": "LinkedIn",
     "info_location": "Location",
-    "cta_title": "Ready to work 🚀",
+    "cta_title": "Ready to work ",
     "cta_desc": "Open to opportunities in Full Stack web development, DevOps, cybersecurity or data science."
   },
   "Footer": {
-    "text": "© 2026 Nathan Dariel BAMANDJI — Junior Full Stack Web Developer"
+    "text": "© 2026 Nathan Dariel BAMANDJI -  Full Stack Web Developer"
   }
 }

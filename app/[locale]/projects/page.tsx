@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { IconExternalLink, IconCode, IconBuilding, IconBrandGit, IconLock } from "@tabler/icons-react";
+import { IconExternalLink, IconCode, IconBuilding, IconBrandGit, IconLock, IconWorld, IconUsersGroup, IconShieldSearch } from "@tabler/icons-react";
 import { CometCard } from "@/components/ui/comet-card";
 
 const tagColorMap: Record<string, string> = {
@@ -53,6 +53,32 @@ export default async function Projects({
       desc: t("project_4_desc"),
       tags: ["Check Point", "Cybersécurité", "PNUD", "Sécurité réseau"],
       color: "purple",
+    },
+    {
+      icon: <IconWorld className="text-blue-600 text-2xl" />,
+      title: t("project_5_title"),
+      category: t("project_5_cat"),
+      desc: t("project_5_desc"),
+      tags: ["WordPress"],
+      url: "https://sefinpetroleumcorp.com",
+      color: "blue",
+    },
+    {
+      icon: <IconUsersGroup className="text-purple-600 text-2xl" />,
+      title: t("project_6_title"),
+      category: t("project_6_cat"),
+      desc: t("project_6_desc"),
+      tags: ["WordPress"],
+      url: "https://oclacongo.org",
+      color: "purple",
+    },
+    {
+      icon: <IconShieldSearch className="text-orange-500 text-2xl" />,
+      title: t("project_7_title"),
+      category: t("project_7_cat"),
+      desc: t("project_7_desc"),
+      tags: ["Wireshark", "Splunk", "Nessus", "Nmap", "Metasploit", "Burp Suite"],
+      color: "orange",
     },
   ];
 

@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nathan Dariel BAMANDJI — Portfolio",
   description:
-    "Développeur Web Full Stack Junior | MSc (Master of science) WOOLF Génie Logiciel | Cybersécurité Check Point",
+    "Développeur Web Full Stack | MSc (Master of science) WOOLF Génie Logiciel | Analyste en Cybersécurité",
 };
 
 export function generateStaticParams() {

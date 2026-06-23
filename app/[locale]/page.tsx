@@ -6,6 +6,9 @@ import {
   IconBrandJavascript, IconBrandReact, IconBrandNextjs, IconBrandNodejs,
   IconBrandPython, IconBrandTailwind, IconBrandDocker, IconPipeline,
   IconBrandMongodb, IconBrandMysql, IconBrandGit, IconBrandTypescript,
+  IconBrandWordpress, IconChartBar, IconTerminal2, IconServer,
+  IconShieldCheck, IconFileText, IconNetwork, IconShield, IconLock,
+  IconCpu2, IconBrandUbuntu, IconBrandWindows,
 } from "@tabler/icons-react";
 
 const skills = [
@@ -21,6 +24,21 @@ const skills = [
   { icon: <IconBrandMongodb className="text-green-600" />, label: "MongoDB" },
   { icon: <IconBrandMysql className="text-blue-700" />, label: "MySQL" },
   { icon: <IconBrandGit className="text-orange-500" />, label: "Git & CI/CD" },
+  { icon: <IconBrandWordpress className="text-blue-600" />, label: "WordPress" },
+  { icon: <IconChartBar className="text-yellow-500" />, label: "Power BI" },
+  { icon: <IconTerminal2 className="text-blue-600" />, label: "Kali Linux" },
+  { icon: <IconServer className="text-green-600" />, label: "VMware Station" },
+  { icon: <IconShieldCheck className="text-red-500" />, label: "Acronis Cyber Protect" },
+  { icon: <IconBrandGithub className="text-gray-800 dark:text-white" />, label: "Git & GitHub" },
+  { icon: <IconFileText className="text-blue-500" />, label: "Microsoft Office" },
+  { icon: <IconNetwork className="text-indigo-500" />, label: "TCP/IP" },
+  { icon: <IconNetwork className="text-purple-500" />, label: "DNS" },
+  { icon: <IconNetwork className="text-pink-500" />, label: "DHCP" },
+  { icon: <IconLock className="text-green-600" />, label: "VPN" },
+  { icon: <IconShield className="text-orange-500" />, label: "Pare-feu" },
+  { icon: <IconCpu2 className="text-blue-500" />, label: "Virtualisation VMware" },
+  { icon: <IconBrandUbuntu className="text-orange-600" />, label: "Linux (Ubuntu)" },
+  { icon: <IconBrandWindows className="text-blue-500" />, label: "Windows Server" },
 ];
 
 export default async function Home({
