@@ -10,7 +10,7 @@
   },
   "HomePage": {
     "available": "Available",
-    "title": " Full Stack Web Developer",
+    "title": " Full Stack Web Developer | Cybersecurity Analyst",
     "name": "Nathan Dariel<br/>BAMANDJI",
     "description": "MSc (Master of science) in Software Engineering · Cybersecurity , Check Point CCSA (Check Point Certified Security Administrator) international certification, currently in progress, covering technologies such as Fortinet and Palo Alto, funded by the United Nations Development Program (UNDP, Senegal Office) · Data Science · CI/CD & DevOps. Passionate about web development, software quality, and digital security. Based in Dakar, Senegal.",
     "view_projects": "View my projects",
@@ -112,6 +112,6 @@
     "cta_desc": "Open to opportunities in Full Stack web development, DevOps, cybersecurity or data science."
   },
   "Footer": {
-    "text": "© 2026 Nathan Dariel BAMANDJI -  Full Stack Web Developer"
+    "text": "© 2026 Nathan Dariel BAMANDJI -  Full Stack Web Developer | Cybersecurity Analyst "
   }
 }
