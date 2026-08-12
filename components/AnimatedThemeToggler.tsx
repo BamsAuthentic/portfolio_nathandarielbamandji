@@ -1,7 +1,7 @@
 "use client";
 
 import { Moon, SunDim } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useSyncExternalStore } from "react";
 import { flushSync } from "react-dom";
 import { cn } from "@/lib/utils";
 
@@ -9,14 +9,18 @@ type props = {
   className?: string;
 };
 
+const emptySubscribe = () => () => {};
+
 export const AnimatedThemeToggler = ({ className }: props) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    setMounted(true);
-
     const updateTheme = () => {
       const isDark = document.documentElement.classList.contains("dark");
       setIsDarkMode(isDark);

@@ -101,12 +101,12 @@ export default async function About({
         <div className="space-y-4">
           {experiences.map((e) => (
             <div key={e.company} className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-5 shadow-sm">
-              <div className="flex items-start justify-between mb-2">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                 <div>
                   <p className="font-semibold text-gray-800 dark:text-gray-100">{e.role}</p>
                   <p className="text-blue-600 text-sm">{e.company}</p>
                 </div>
-                <span className="text-xs text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700 border border-gray-100 dark:border-gray-700 px-3 py-1 rounded-full">
+                <span className="text-xs text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700 border border-gray-100 dark:border-gray-700 px-3 py-1 rounded-full w-fit">
                   {e.period}
                 </span>
               </div>
@@ -121,13 +121,13 @@ export default async function About({
         <h2 className="text-xl font-semibold mb-6">{t("certs_title")}</h2>
         <ul className="space-y-3">
           {certs.map((c) => (
-            <li key={c.label} className="flex gap-4 items-start bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition">
+            <li key={c.label} className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition">
               <span>{c.icon}</span>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-gray-800 dark:text-gray-100">{c.label}</p>
                 <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{c.org}</p>
               </div>
-              <span className="text-xs bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-400 px-2 py-1 rounded-full whitespace-nowrap">
+              <span className="text-xs bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-400 px-2 py-1 rounded-full whitespace-normal sm:whitespace-nowrap w-fit">
                 {c.badge}
               </span>
             </li>

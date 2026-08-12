@@ -14,3 +14,6 @@ build/
 .env.test.local
 .env.production.local
 .env
+
+# Copie de build locale (ancien déploiement)
+portfolio-nathan/

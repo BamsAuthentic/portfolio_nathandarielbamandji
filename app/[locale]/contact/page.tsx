@@ -53,8 +53,7 @@ export default async function Contact({
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-10">
-
+      <div className="grid md:grid-cols-2 gap-8 md:gap-10">
         <ContactForm />
 
         {/* CONTACT INFO */}
@@ -65,15 +64,15 @@ export default async function Contact({
               <div className="w-10 h-10 bg-gray-50 dark:bg-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
                 {c.icon}
               </div>
-              <div>
+              <div className="flex-1 min-w-0">
                 <p className="text-xs text-gray-400 dark:text-gray-500 font-medium">{c.label}</p>
                 {c.href ? (
                   <a href={c.href} target="_blank" rel="noreferrer"
-                    className="text-sm text-gray-800 dark:text-gray-200 hover:text-blue-600 transition font-medium">
+                    className="text-sm text-gray-800 dark:text-gray-200 hover:text-blue-600 transition font-medium break-all">
                     {c.value}
                   </a>
                 ) : (
-                  <p className="text-sm text-gray-800 dark:text-gray-200 font-medium">{c.value}</p>
+                  <p className="text-sm text-gray-800 dark:text-gray-200 font-medium break-words">{c.value}</p>
                 )}
               </div>
             </div>

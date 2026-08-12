@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nathan Dariel BAMANDJI — Portfolio",
   description:
-    "Développeur Web Full Stack | MSc (Master of science) WOOLF Génie Logiciel | Analyste en Cybersécurité",
+    "Ingénieur Full Stack | MSc UE (Master of science Européen) WOOLF Génie Logiciel | Analyste en Cybersécurité",
 };
 
 export function generateStaticParams() {
@@ -64,7 +64,7 @@ export default async function LocaleLayout({
         />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main className="max-w-5xl mx-auto px-6 py-10">{children}</main>
+          <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10">{children}</main>
           <footer
             className="text-center py-8 text-sm mt-16"
             style={{

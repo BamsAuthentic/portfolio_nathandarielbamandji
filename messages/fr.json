@@ -10,12 +10,12 @@
   },
   "HomePage": {
     "available": "Disponible",
-    "title": "Développeur Web Full Stack | Analyste Cybersécurité",
+    "title": "Ingénieur Full Stack | Analyste Cybersécurité",
     "name": "Nathan Dariel<br/>BAMANDJI",
     "description": "MSc (Master of science) Woolf en Génie Logiciel ·Cybersécurité, Certificat international Check Point CCSA  (Check Point Certified SecurityAdministrator) en cours fonctionnant comme les technologies Fortinet et Palo Alto subventionnée par le Programme des Nations Unies pour le Developpement (PNUD Bureau du Sénégal) · Data Science · CI/CD & DevOps. Passionné par la cybersécurité, le développement web, la qualité logicielle et la sécurité numérique. Basé à Dakar, Sénégal.",
     "view_projects": "Voir mes projets",
     "contact_me": "Me contacter",
-    "stats_exp": "Ans d'expérience",
+    "stats_exp": "Expérience",
     "stats_projects": "Projets réalisés",
     "stats_certs": "Certifications",
     "stats_degree": "Génie Logiciel",
@@ -27,15 +27,15 @@
   },
   "AboutPage": {
     "title": "À propos de moi",
-    "bio_p1": "Je suis <strong>Nathan Dariel BAMANDJI</strong>, Développeur Web Full Stack | Analyste en Cybersécurité,  passionné par la création d'applications web modernes, performantes et sécurisées et la sécurité des systèmes et données.",
-    "bio_p2": "Actuellement en fin de <strong>MSc (Master of Science) Woolf en Génie Logiciel</strong>, je combine des compétences techniques solides en développement web (JavaScript, React, Next.js, Node.js, Python, Power BI) avec une expertise en DevOps, CI/CD Intégration Continue et Déploiement continue, Analyse, reporting et visualisation  des données avec Power BI et Cybersécurité oeuvrant aussi dans la Sensibilisation des cyberménaces, et l'hygiènne numérique. Engagé dans des projets à impact social et technologique à l'échelle régionale et internationale à l'issue de ma formation en Cybersécurité piloté par le PNUD, Give1project et Open Society Fondation",
+    "bio_p1": "Je suis <strong>Nathan Dariel BAMANDJI</strong>, Ingénieur Full Stack | Analyste en Cybersécurité,  passionné par la création d'applications web modernes, performantes et sécurisées et la sécurité des systèmes et données.",
+    "bio_p2": "Titulaire d'un <strong>Master of Science (MSc Européen) de WOOLF University de Malte</strong>, je combine des compétences techniques solides en développement web (JavaScript, React, Next.js, Node.js, Python, Power BI) avec une expertise en DevOps, CI/CD Intégration Continue et Déploiement continue, Analyse, reporting et visualisation  des données avec Power BI et Cybersécurité oeuvrant aussi dans la Sensibilisation des cyberménaces, et l'hygiènne numérique. Engagé dans des projets à impact social et technologique à l'échelle régionale et internationale à l'issue de ma formation en Cybersécurité piloté par le PNUD, Give1project et Open Society Fondation",
     "thesis_badge": "Mémoire de licence professionnelle en Informatique",
     "thesis_title": "Intégration, validation et déploiement continu CI/CD avec DevOps et Jenkins — Cas Dave Procode",
     "thesis_desc": "Travail de recherche axé sur l'assurance qualité logicielle (QA), le contrôle qualité, les tests logiciels et la mise en place d'une pipeline DevOps complète avec Jenkins dans un contexte réel de production.",
     "experience_title": "Expériences",
-    "exp_1_role": "Développeur Web Full Stack",
+    "exp_1_role": "Ingénieur Full Stack",
     "exp_1_company": "Dave Procode",
-    "exp_1_period": "Février 2023 - 2026 (en cours)",
+    "exp_1_period": "Février 2023 - Juillet 2026",
     "exp_1_desc": "Développement et déploiement des applications web moderne, Rédaction des cahiers de charge, tests logiciels et assurance qualité.",
     "exp_2_role": "Enseignant en Informatique",
     "exp_2_company": "Lycée privé Birago Diop du groupe ISM Sénégal",
@@ -50,7 +50,7 @@
     "cert_1_org": "PNUD · Give1Project · Open Society Foundation",
     "cert_1_badge": "Certificat international Check Point CCSA  (Check Point Certified Security Administrator)",
     "cert_2_label": "MSc (Master of science) Woolf - Génie Logiciel",
-    "cert_2_org": "En cours de finalisation",
+    "cert_2_org": "Titulaire",
     "cert_2_badge": "MSc",
     "cert_3_label": "Data Science",
     "cert_3_org": "Certification internationale",
@@ -87,7 +87,13 @@
     "project_7_title": "Bootcamp Cybersécurité - Monitoring & SIEM",
     "project_7_cat": "Cybersécurité & Pentest",
     "project_7_desc": "Formation pratique en cybersécurité lors d'un Bootcamp intensif. Travail avec Wireshark pour l'analyse approfondie des protocoles réseaux et le diagnostic de trafic suspect, Splunk pour l'analyse des logs, la création de tableaux de bord de sécurité et la détection d'anomalies en temps réel. Scans de vulnérabilités avec Nessus/OpenVAS et gestion de la remédiation. Audit réseau et tests d'intrusion avec Nmap/Metasploit pour l'identification des vecteurs d'attaque, et Burp Suite pour l'analyse de sécurité des applications web.",
-    "view_site": "Voir le site"
+    "view_site": "Voir le site",
+    "project_8_title": "Baby Essentials Hub",
+    "project_8_cat": "Projet MSc Européen · Boutique e-commerce",
+    "project_8_desc": "Plateforme e-commerce complète dédiée aux articles pour bébé (layettes, vêtements, accessoires d'un nouveau-né) développée avec la pile MERN (MongoDB, Express, React.js, Node.js). Les parents peuvent commander les essentiels pour bébé sans se déplacer de chez eux. Front-end hébergé sur Vercel et back-end déployé sur Render. Projet développé dans le cadre de l'obtention de mon Master of Science (MSc Européen) WOOLF, destiné à être commercialisé.",
+    "project_9_title": "Bricolibe",
+    "project_9_cat": "Plateforme Artisans · Mise en relation",
+    "project_9_desc": "Plateforme qui aide les particuliers à trouver rapidement un artisan disponible et proche de chez eux. Elle facilite la demande, le suivi, les avis et la visibilité des prestataires locaux. Par exemple, si j'ai besoin d'un plombier, je reste chez moi, je vais sur l'application et je contacte un plombier bien identifié qui viendra chez moi : lui gagne en visibilité et moi en facilité pour trouver un artisan. Développée avec Django et React.js."
   },
   "ContactPage": {
     "title": "Me contacter",
@@ -112,6 +118,6 @@
     "cta_desc": "Ouvert aux opportunités en développement web Full Stack, DevOps, cybersécurité ou data science."
   },
   "Footer": {
-    "text": "© 2026 Nathan Dariel BAMANDJI - Développeur Web Full Stack | Analyste Cybersécurité "
+    "text": "© 2026 Nathan Dariel BAMANDJI - Ingénieur Full Stack | Analyste Cybersécurité "
   }
 }

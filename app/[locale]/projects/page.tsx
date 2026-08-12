@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { IconExternalLink, IconCode, IconBuilding, IconBrandGit, IconLock, IconWorld, IconUsersGroup, IconShieldSearch } from "@tabler/icons-react";
+import { IconExternalLink, IconCode, IconBuilding, IconBrandGit, IconLock, IconWorld, IconUsersGroup, IconShieldSearch, IconShoppingBag, IconHammer } from "@tabler/icons-react";
 import { CometCard } from "@/components/ui/comet-card";
 
 const tagColorMap: Record<string, string> = {
@@ -80,6 +80,24 @@ export default async function Projects({
       tags: ["Wireshark", "Splunk", "Nessus", "Nmap", "Metasploit", "Burp Suite"],
       color: "orange",
     },
+    {
+      icon: <IconShoppingBag className="text-cyan-600 text-2xl" />,
+      title: t("project_8_title"),
+      category: t("project_8_cat"),
+      desc: t("project_8_desc"),
+      tags: ["MongoDB", "Express", "React", "Node.js", "MERN", "Vercel", "Render", "E-commerce"],
+      url: "https://ecommercefrontend-azure.vercel.app/",
+      color: "blue",
+    },
+    {
+      icon: <IconHammer className="text-orange-500 text-2xl" />,
+      title: t("project_9_title"),
+      category: t("project_9_cat"),
+      desc: t("project_9_desc"),
+      tags: ["Django", "React.js", "Python", "API REST", "Artisans"],
+      url: "https://bricolibe.com",
+      color: "green",
+    },
   ];
 
   return (
@@ -89,7 +107,7 @@ export default async function Projects({
         <p className="text-gray-400 dark:text-gray-500 text-sm">{t("subtitle")}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((p) => (
           <CometCard key={p.title}>
             <div className="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl p-6 flex flex-col h-full">
